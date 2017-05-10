@@ -15,24 +15,23 @@
         <ol>
             <li>
                 <p>Описать стиль непосредственно в самом документе:</p>
-                <pre><html style="color: black; font-size: 10px;"></html></pre>
+                <p>&lthtml style="color: black; font-size: 10px;"&gt &lt/html&gt</p>
             </li>
             <li>
                 <p>Написать стилевое описание для всех идентичных элементов в html документе:</p>
-                <pre>
-                   <head>
-                        body{background-color: red}
-                        h1{front-size: 20px}
-                        h1, h2{font-family: Verdana}
-                    </head>
-                </pre>
+
+                    &ltstyle&gt <br>
+                            body{background-color: blue} <br>
+                            h1{front-size: 20px} <br>
+                            h1, h2{font-family: Verdana} <br>
+                    &lt/style&gt
             </li>
             <li>
                 <p>Вынести стилевое описание элементов в отдельный css файл</p>
+                <p>Для этого используется <link>:</p>
                 <pre>
-                    Для этого используется <link>:
-                        <link rel="stylesheet" href="style.css" type="text/css">
-                        <p>Подробнее об этом теге читаем <a href="link.html">тут</a></p>
+                        &ltlink&gt rel="stylesheet" href="style.css" type="text/css">
+                        <p>Подробнее об этом теге читаем <a href="link.html">тут</a> </p>
                 </pre>
             </li>
         </ol>
@@ -47,14 +46,14 @@
             </ol>
             
         <h2>Кто такие селекторы и с чем их едят</h2>
-        <pre align="center">
+        <pre>
                Селектор:{
                     color:black;
                     font-size: 14px;
                 }
         </pre>
         <p>В качестве селектора можно указать тег, class или id, однако последние два требуют символ до себя: .class | #id</p>
-        <p>Объявляются они так: <pre><h1 class="exemple" id="exemple"></h1></pre></p>
+        <p>Объявляются они так: &lth1 class="exemple" id="exemple"&gt &lt/h1&gt </p>
         <p> color: black и font-size 14px - это определения. Они состоят из двух частей: </p>
         <ul>
             <li>Свойство</li>
@@ -62,7 +61,58 @@
         </ul>
         
         <h2>Пройдёмся по некоторым стилям</h2>
-        
+        <ol>
+            <li>
+                <p>Выравнивание текста: <u>text-align</u></p>
+                <p>Принимает следующие значениея: left, right, center and justify (выравниваение по ширине)</p>
+            </li>
+            <li>
+                <p>Оформление текста: <u>ext-decoration</u></p>
+                <ul>
+                    <li><u>blink</u> - Мигает</li>
+                    <li><u>line-thtough</u> - Перечеркивается </li>
+                    <li><u>overline</u> -  Надчёркивается</li>
+                    <li><u>underline</u> - Подчёркивается</li>
+                    <li><u>none</u> - текст без оформления</li>
+                </ul>
+            </li>
+            <li>
+                <p>Отступ первой строки - <u>text-indent: 10px</u></p>
+                <p> Задаёт отступ первой строки в блоке текста с левой стороны</p>
+            </li>
+            <li>
+                <p>Трансформация текста - <u>text-transform</u></p>
+                <p>Имеет следующие свойства:</p>
+                <ul>
+                    <li><u>none</u> - значение по умолчанию</li>
+                    <li><u>capitalize</u> - каждое слово с заглавного символа</li>
+                    <li><u>lowercase</u> - всё в нижнем регистре</li>
+                    <li><u>uppercase</u> - всё в верхнем регистре</li>
+                </ul>
+            </li>
+            <li>
+                <p>Вертикальное выравнивание - <u>vertical-align</u></p>
+                <p>Имеет следующие значения:</p>
+                <ul>
+                    <li><u>baseline</u>    - <a href="baza.html">базовая линия</a> элемента по базу родителя</li>
+                    <li><u>bottom</u>    - элемент по нижней части строки</li>
+                    <li><u>middle</u>    - середина элемента по базе родителя и прибавляется 1/2 высоты родителя</li>
+                    <li><u>sub</u>    - нижний индекс</li>
+                    <li><u>super</u>    - верхний индекс</li>
+                    <li><u>text-bottom</u>    - нижняя граница элемента по нижнему краю строки</li>
+                    <li><u>text-top</u>    верхняя граница элемента по верхнему краю строки</li>
+                    <li><u>top</u>    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Пробелы и перенос строки - <u>white-space</u></p>
+                <ul>
+                    <li><u>normal</u> - обычный вывод текста</li>
+                    <li><u>nowrap</u> - запрет на автоматический перенос строки</li>
+                    <li><u>pre</u> - показывает так как он есть</li>
+                </ul>
+            </li>
+        </ol>
         
     </body>
 </html>
