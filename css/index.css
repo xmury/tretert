@@ -1,0 +1,25 @@
+
+header {
+    background: #a5260a;
+    height: auto;
+    width: 1000px;
+        
+}
+
+body {
+    margin: 5px;
+    margin-top: 15px
+}
+
+tr {
+    text-align: center;
+}
+
+img {
+    width: 130px;
+    height: 150px;
+}
+
+.level_two, .level_one, .level_tree {
+    background: gray;
+}
