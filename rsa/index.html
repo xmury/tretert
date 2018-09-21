@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RSA test</title>
+    <script src="rsa.js"></script>
+    <style>
+    .form {
+      text-align: center;
+      height: 50px;
+      width: 24%;
+    }
+    .btn_div {
+      text-align: center;
+    }
+    .btn {
+      width: 100px;
+      height: 50px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="btn_div">
+      <input type="text" class="form" id="text_in"    placeholder="Текст для шифрования">
+      <input type="text" class="form" id="shifr_out"  placeholder="Шифр">
+      <input type="text" class="form" id="text_out"   placeholder="Исходный тест">
+    </div>
+    <hr>
+    <div class="btn_div">
+      <button class="btn btn-default" onclick="Shifration()">Шифровка</button>
+      <button class="btn btn-default" onclick="Generation()">Генерация ключей</button>
+      <button class="btn btn-default" onclick="WikiExemple()">Пример из вики</button>
+      <button class="btn btn-default" onclick="UnShifration()">Расшифровка</button>
+    </div>
+    <hr>
+    <footer if="footer"></footer>
+  </body>
+</html>

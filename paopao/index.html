@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>PaoPao</title>
+	<script src="scripts.js"></script>
+	<script src="waySeacher.js"></script>
+	<script src="test.js"></script>
+	<style>
+		.form {
+			border: 1px solid black;
+		}
+		.area {
+			border: 1px solid green;
+			width: 90%;
+			height: 500px;
+			margin: auto;
+		}
+
+		.button {
+			/* display: inline-block; */
+			/* display: table; */
+			/* float: left */
+			display: inline;
+		}
+		#generation {
+			text-align: center;
+		}
+	</style>
+</head>
+	<body>
+		<div id = 'generation'>
+			<button class="btn" onclick="genArea()">Генерация</button>
+			<button class="btn" onclick="AreaUpdate()">Обновить Поле</button>
+			<hr>
+		</div>
+		<div id = 'space'>  
+
+		</div>
+	</body>
+</html>
